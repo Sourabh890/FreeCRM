@@ -21,7 +21,7 @@ public class ContactsPage extends TestBase {
 	@FindBy(xpath = "//input[@name='last_name']")
 	WebElement lastName;
 	
-	@FindBy(xpath = "//i[@class='save icon']")
+	@FindBy(xpath = "//i[@class='save icon'][1]")
 	WebElement saveBtn;
 	
 	public ContactsPage() {
@@ -32,7 +32,7 @@ public class ContactsPage extends TestBase {
 		return contactsLabel.isDisplayed();
 	}
 
-	public void verifyClickOnCreateLink() {
+	public void verifyClickOnCreateBtn() {
 		createNewContact.click();
 	}
 	

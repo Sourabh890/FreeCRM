@@ -46,7 +46,7 @@ public class ContactsPageTest extends TestBase {
 	
 	@Test(priority=2, dataProvider="getCRMTestData")
 	public void validateCreateNewContact(String firstName, String lastName) {  
-		contactspage.verifyClickOnCreateLink();
+		contactspage.verifyClickOnCreateBtn();
 		//contactspage.createNewContact("Tom", "Peter");
 		contactspage.createNewContact(firstName, lastName);
 	}
